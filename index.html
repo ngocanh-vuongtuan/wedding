@@ -68,7 +68,7 @@
               </div>
               <div class="navbar-item">
                 <a class="navbar-item" href="#rsvp">
-                  Liên hệ
+                  Hộp mừng cưới
                 </a>
               </div>
             </div>
@@ -109,10 +109,41 @@
               var year = now.getFullYear() + 1;
           
               var nextyear = month + '/' + day + '/' + year + ' 07:07:07';
-              var harih = '01/01/2024 10:00:00';
+              var eventTime = '01/01/2024 10:00:00';
+              function getParam(param) {
+                const queryString = window.location.search;
+
+                // Tạo một đối tượng URLSearchParams mới
+                const urlParams = new URLSearchParams(queryString);
+
+                // Lấy giá trị của param1
+                return urlParams.get(param);
+              }
+              const side = getParam("s")
+              var eDay = "Chủ Nhật"
+              console.log({side});
+              switch(side) {
+                case 'g':
+                  eventTime = '12/31/2023 16:00:00';
+                  eDay ="Thứ Hai"
+                  break;
+                case 'bm-t':
+                  eventTime = '01/01/2024 10:00:00';
+                  eDay = "Chủ Nhật"
+                  break;
+                case 'bm-g':
+                  eventTime = '12/31/2023 15:00:00';
+                  eDay ="Thứ Hai"
+                  break;
+                default:
+                  eventTime = '01/01/2024 10:00:00';
+                  eDay = "Chủ Nhật"
+                  break;
+              }
+              console.log({eventTime});
 
               $('#hitungmundur').countdown({
-                date: harih, // TODO Date format: 07/27/2017 17:00:00
+                date: eventTime, // TODO Date format: 07/27/2017 17:00:00
                 offset: +7, // TODO Your Timezone Offset
                 day: 'Ngày',
                 days: 'Ngày'
@@ -120,6 +151,8 @@
                 // alert('Done!');
               });
             </script>  
+            <div class="mobile-bg-overlay"></div>
+            <img src="../image/anna.jpg" alt="aaa" class="mobile-bg"/>
           </div>
           <!-- End Countdown -->
         </div>
@@ -140,7 +173,7 @@
                     <a href="#lokasi">Địa điểm</a>
                   </li>
                   <li>
-                    <a href="#rsvp">Liên hệ</a>
+                    <a href="#rsvp">Hộp Mừng Cưới</a>
                   </li>
                 </ul>
               </div>
@@ -284,7 +317,7 @@
                 </div>
                 <div class="banking-box-item">
                     <p><strong>Mừng cưới đến Cô Dâu</strong></p>
-                    <img src="./image/bank-tuan.jpg"/>
+                    <img src="./image/bank-anh.jpg"/>
                     <p>Ngân hàng: <strong>Ngân hàng Techcombank</strong></p>
                     <p>Tên tài khoản: <strong>NGUYEN THI NGOC ANH</strong></p>
                     <p>Số tài khoản: <strong>1903 6545 8060 16</strong></p>
@@ -295,6 +328,13 @@
               <div class="space40px"></div>
               <div data-aos="fade-up" data-aos-easing="linear">
                 <img src="image/divider-leaves.png" class="divider has-text-centered" alt="~~~">
+              </div>
+              <div class="space40px"></div>
+               <div data-aos="fade-up " data-aos-easing="linear" class="footer-img-wrapper">
+                <img src="image/ft2.jpg" class="footer-img ft-img-2" alt="~~~">
+                <img src="image/ft1.jpg" class="footer-img ft-img-1" alt="~~~">
+                <img src="image/ft3.jpg" class="footer-img ft-img-3" alt="~~~">
+
               </div>
               <div class="space40px"></div>
               <p class="h2 subtitle" data-aos="fade-up" data-aos-easing="linear">
@@ -330,10 +370,30 @@
     <!-- End Footer -->
 
     <!-- Scripts -->
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/menikah.js"></script>
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
+    <script>
+      console.log({eventTime});
+      var eTime = new Date(eventTime);
+      var eDate = eTime.getDate();
+      var eMonth = eTime.getMonth() + 1;
+      var eYear = eTime.getFullYear();
+      var eHour = eTime.getHours();
+      const guest = getParam("g")
+      if(!!guest) {
+        document.getElementById("guest").innerText = guest
+      }
+      document.getElementById("iv-hour").innerText = eHour
+      document.getElementById("iv-day").innerText = eDay
+      document.getElementById("iv-date").innerText = eDate
+      document.getElementById("iv-month").innerText = eMonth + " " + eYear
+
+    </script>
     <script>
       AOS.init({
         easing: "ease-out",

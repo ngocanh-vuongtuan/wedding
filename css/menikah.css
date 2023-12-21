@@ -68,6 +68,20 @@ html {
 .banking-box-item img {
     max-width: 200px;
 }
+.footer-img-wrapper {
+      display: flex;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+
+
+img.footer-img {
+    width: 250px;
+    height: auto;
+    object-fit: cover;
+    clip-path: path('M213.1,6.7c-32.4-14.4-73.7,0-88.1,30.6C110.6,4.9,67.5-9.5,36.9,6.7C2.8,22.9-13.4,62.4,13.5,110.9 C33.3,145.1,67.5,170.3,125,217c59.3-46.7,93.5-71.9,111.5-106.1C263.4,64.2,247.2,22.9,213.1,6.7z');
+    margin: 0 80px;
+}
 .hero .title {
   font-family: 'Great Vibes', cursive;
   font-weight: 700;
@@ -103,11 +117,50 @@ html {
   background: white;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.082);
 }
-
+.container {
+  z-index: 1001;
+}
 @media (max-width: 599px) {
   .hero .hero-foot {
     display: none;
   }
+}
+@media (max-width: 767px) {
+  .ampersand {
+    font-size: 3rem !important;
+  }
+  .nama-lengkap {
+    font-size: 2.2rem !important;
+  }
+  .ft-img-2, .ft-img-3 {
+    display: none;
+  }
+  .banking-box-wrapper {
+    width: 100%;
+
+    flex-direction: column;
+    gap: 10px;
+}
+  img.mobile-bg {
+    position: absolute;
+    top: 30px;
+    max-width: 150%;
+    left: -28%;
+    z-index: 99;
+    opacity: 0.5;
+}
+.mobile-bg-overlay {
+    position: absolute;
+    width: 500px;
+    height: 390px;
+    background: #a88d8e52;
+    top: 30px;
+    z-index: 100;
+    left: -5%;
+}
+.hero {
+      background: linear-gradient(rgba(153, 110, 109, 0.65), rgba(153, 110, 109, 0.65)), rgba(0, 0, 0, 0.55)  no-repeat;
+}
 }
 
 .hero .hero-foot .hero-foot--wrapper {
