@@ -125,6 +125,9 @@ img.footer-img {
     display: none;
   }
 }
+ img.mobile-bg {
+    display: none;
+ }
 @media (max-width: 767px) {
   .ampersand {
     font-size: 3rem !important;
@@ -142,6 +145,7 @@ img.footer-img {
     gap: 10px;
 }
   img.mobile-bg {
+    display: block;
     position: absolute;
     top: 30px;
     max-width: 150%;
