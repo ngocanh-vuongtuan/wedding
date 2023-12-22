@@ -81,7 +81,7 @@
             <h1 class="subtitle">Lễ Thành Hôn</h1>
             <div class="title"><h1>Vương Tuấn</h1><h1> & </h1><h1>Ngọc Ánh</h1></div>
             <h4 class="subtitle tempatwaktu">
-                <p id="time-host">Thứ Hai, 01 tháng 01 năm 2024</p>
+                
                 </br>
                 <p id="address-host">Nhà hàng Thanh Truyền - QL 37 - Hà Thượng - Đại Từ - Thái Nguyên</p>
                 </br>              
@@ -412,11 +412,12 @@
       
       if(!!guest) {
         document.getElementById("guest").innerText = guest
-        if(guest == "bm-g" ||guest == "bm-t") {
-          document.getElementById("us").innerText = "hai con chúng tôi"
-        }
+        
       }
       if(!!side) {
+        if(side == "bm-g" ||side == "bm-t") {
+          document.getElementById("us").innerText = "hai con chúng tôi"
+        }
         if(side == 't' || side == 'gm-t') {
           document.getElementById("bank-anh").style.display = 'none'
           document.getElementById("address-g").style.display = 'none'

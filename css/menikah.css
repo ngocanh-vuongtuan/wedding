@@ -154,106 +154,7 @@ p#time-host {
     left: 42%;
     font-size: 20px;
 }
-@media (max-width: 767px) {
-  ul#hitungmundur li span {
-    font-size: 25px;
-    font-weight: 500;
-    line-height: 30px;
-}
 
-
-  p#time-host {
-    width: 17%;
-    position: absolute;
-        bottom: 9%;
-    z-index: 101;
-    left: 40%;
-    text-align: center;
-    font-size: 8px;
-}
-img.std {
-    display: block;
-    position: absolute;
-    bottom: 25%;
-    left: 34%;
-    width: 27%;
-    opacity: 0.8;
-}
-  .container.has-text-centered {
-    margin-top: -9px;
-}
-.hero .title {
-
-    font-size: 3rem;
-}
-  .mobile-bg-wrapper {
-        height: 380px;
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-  }
-  .ampersand {
-    font-size:2rem !important;
-  }
-  .nama-lengkap {
-    font-size: 2.2rem !important;
-  }
-  .ft-img-2, .ft-img-3 {
-    display: none;
-  }
-  .banking-box-wrapper {
-    width: 100%;
-
-    flex-direction: column;
-    gap: 10px;
-}
-  img.mobile-bg {
-        display: block;
-    position: absolute;
-    top: 50px;
-    max-width: 150%;
-    left: -22%;
-    z-index: 99;
-    opacity: 1;
-    height: auto;
-    position: absolute;
-
-}
-
-.subtitle:not(.is-spaced)+.title h1:nth-child(2) {
-  font-size: 2rem;
-}
-ul#hitungmundur {
-    margin-top: 63px!important;
-}
-ul#hitungmundur li span {
-    font-size: 22px;
-    font-weight: 500;
-    line-height: 30px;
-}
-
-
-.mobile-bg-overlay {
-    width: 500px;
-    display: block;
-    top: 50px;
-    max-width: 150%;
-    left: 0%;
-    z-index: 100;
-    opacity: 1;
-    position: absolute;
-    background: #996e6d94;
-    height: 100%;
-}
-.hero {
-      background: linear-gradient(rgba(153, 110, 109, 0.65), rgba(153, 110, 109, 0.65)), rgba(0, 0, 0, 0.55)  no-repeat;
-}
-div#bank-anh p {
-  font-size: 14px;
-}
-}
 
 .hero .hero-foot .hero-foot--wrapper {
   margin: 7px auto;
@@ -810,7 +711,7 @@ body.preloader-site {
 
 .section-light {
   background-image: url(../image/divider-flowers-leaves.png);
-  background-position: bottom -30px center;
+  background-position: bottom -40px center;
   background-repeat: no-repeat;
   background-size: initial;
 }
@@ -824,4 +725,113 @@ body.preloader-site {
   vertical-align: middle;
   text-align: center;
   padding: 10px;
+}
+@media (max-width: 767px) {
+  .section-light {
+  background-image: url(../image/divider-flowers-leaves.png);
+  background-position: bottom -18px center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+}
+  .space40px {
+    height: 10px  !important;
+}
+  ul#hitungmundur li span {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+
+  p#time-host {
+    width: 17%;
+    position: absolute;
+        bottom: 9%;
+    z-index: 101;
+    left: 40%;
+    text-align: center;
+    font-size: 8px;
+}
+img.std {
+    display: block;
+    position: absolute;
+    bottom: 25%;
+    left: 34%;
+    width: 27%;
+    opacity: 0.8;
+}
+  .container.has-text-centered {
+    margin-top: -9px;
+}
+.hero .title {
+
+    font-size: 3rem;
+}
+  .mobile-bg-wrapper {
+        height: 380px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .ampersand {
+    font-size:2rem !important;
+  }
+  .nama-lengkap {
+    font-size: 2.2rem !important;
+  }
+  .ft-img-2, .ft-img-3 {
+    display: none;
+  }
+  .banking-box-wrapper {
+    width: 100%;
+
+    flex-direction: column;
+    gap: 10px;
+}
+  img.mobile-bg {
+        display: block;
+    position: absolute;
+    top: 50px;
+    max-width: 150%;
+    left: -22%;
+    z-index: 99;
+    opacity: 1;
+    height: auto;
+    position: absolute;
+
+}
+
+.subtitle:not(.is-spaced)+.title h1:nth-child(2) {
+  font-size: 2rem;
+}
+ul#hitungmundur {
+    margin-top: 63px!important;
+}
+ul#hitungmundur li span {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+
+.mobile-bg-overlay {
+    width: 500px;
+    display: block;
+    top: 50px;
+    max-width: 150%;
+    left: 0%;
+    z-index: 100;
+    opacity: 1;
+    position: absolute;
+    background: #996e6d94;
+    height: 100%;
+}
+.hero {
+      background: linear-gradient(rgba(153, 110, 109, 0.65), rgba(153, 110, 109, 0.65)), rgba(0, 0, 0, 0.55)  no-repeat;
+}
+div#bank-anh p {
+  font-size: 14px;
+}
 }
