@@ -149,9 +149,13 @@
               }, function () {
                 // alert('Done!');
               });
-            </script>  
-            <div class="mobile-bg-overlay"></div>
-            <img src="image/anna.jpg" alt="aaa" class="mobile-bg"/>
+            </script>
+            <div class="mobile-bg-wrapper"> 
+                <div class="mobile-bg-overlay"></div>
+                <img src="image/anna.jpg" alt="aaa" class="mobile-bg"/>
+                
+
+            </div> 
           </div>
           <!-- End Countdown -->
         </div>
@@ -217,7 +221,11 @@
         <span class="space40px"></span>
       </section>
       <!-- End regular-section-->    
-      
+      <div class="std-wrapper">
+          <img src="image/std.png" alt="aaa" class="std"/>
+          <img src="image/std.jpg" alt="aaa" class="std-img"/>
+                <p id="time-host">Thứ Hai, 01 tháng 01 năm 2024</p> 
+      </div>
       <!-- Begin Waktu Section -->
       <section class="section-dark" id="Waktu">
         <div class="container">
@@ -434,8 +442,8 @@
       document.getElementById("iv-month").innerText = eMonth + " " + eYear
       if(window.screen.width < 767) {
         console.log(window.innerWidth)
-        document.querySelector(".mobile-bg").style.maxWidth = window.screen.width + "px"
-        document.querySelector(".mobile-bg-overlay").style.maxWidth = window.screen.width + "px"
+        document.querySelector(".mobile-bg").style.maxWidth = (window.screen.width + 170) + "px"
+        document.querySelector(".mobile-bg-overlay").style.maxWidth = (window.screen.width + 170) + "px"
 
       }
     </script>

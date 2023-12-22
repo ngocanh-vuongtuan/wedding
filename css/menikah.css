@@ -133,10 +133,67 @@ img.footer-img {
     display: none;
   }
 }
- img.mobile-bg {
+ img.mobile-bg, h4.subtitle.tempatwaktu  {
     display: none;
  }
+ .std-wrapper {
+  position: relative;
+ }
+img.std {
+    display: block;
+    position: absolute;
+    bottom: 27%;
+    left: 34%;
+    width: 28%;
+    opacity: 0.8;
+}
+p#time-host {
+    position: absolute;
+    color: #ffffffa8;
+    bottom: 22%;
+    left: 42%;
+    font-size: 20px;
+}
 @media (max-width: 767px) {
+  ul#hitungmundur li span {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+
+  p#time-host {
+    width: 17%;
+    position: absolute;
+        bottom: 9%;
+    z-index: 101;
+    left: 40%;
+    text-align: center;
+    font-size: 8px;
+}
+img.std {
+    display: block;
+    position: absolute;
+    bottom: 25%;
+    left: 34%;
+    width: 27%;
+    opacity: 0.8;
+}
+  .container.has-text-centered {
+    margin-top: -9px;
+}
+.hero .title {
+
+    font-size: 3rem;
+}
+  .mobile-bg-wrapper {
+        height: 380px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
   .ampersand {
     font-size:2rem !important;
   }
@@ -153,26 +210,42 @@ img.footer-img {
     gap: 10px;
 }
   img.mobile-bg {
-    display: block;
+        display: block;
     position: absolute;
     top: 50px;
     max-width: 150%;
-    left: 0%;
+    left: -22%;
     z-index: 99;
-    opacity: 0.5;
-}
-.mobile-bg-overlay {
+    opacity: 1;
+    height: auto;
     position: absolute;
-    width: 500px;
-    height: 390px;
-    background: #a88d8e52;
-    top: 30px;
-    z-index: 100;
-    left: -5%;
-        display: none;
+
 }
-.container.has-text-centered {
-  margin-top: 210px;
+
+.subtitle:not(.is-spaced)+.title h1:nth-child(2) {
+  font-size: 2rem;
+}
+ul#hitungmundur {
+    margin-top: 63px!important;
+}
+ul#hitungmundur li span {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+
+.mobile-bg-overlay {
+    width: 500px;
+    display: block;
+    top: 50px;
+    max-width: 150%;
+    left: 0%;
+    z-index: 100;
+    opacity: 1;
+    position: absolute;
+    background: #996e6d94;
+    height: 100%;
 }
 .hero {
       background: linear-gradient(rgba(153, 110, 109, 0.65), rgba(153, 110, 109, 0.65)), rgba(0, 0, 0, 0.55)  no-repeat;
